@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.ci6225.ntu.ead.controller.ItemController" project="DataSynchronizer" 
+    file="/DataSynchronizer/src/main/java/com/ci6225/ntu/ead/controller/ItemController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="237" x="118" y="126"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="com.ci6225.ntu.ead.dao.ExpiredItemRepository" project="DataSynchronizer" 
+    file="/DataSynchronizer/src/main/java/com/ci6225/ntu/ead/dao/ExpiredItemRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="65" width="178" x="547" y="320"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="com.ci6225.ntu.ead.dao.ItemDetailsRepository" project="DataSynchronizer" 
+    file="/DataSynchronizer/src/main/java/com/ci6225/ntu/ead/dao/ItemDetailsRepository.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="65" width="172" x="549" y="98"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="4" language="java" name="com.ci6225.ntu.ead.service.HibernateSearchService" project="DataSynchronizer" 
+    file="/DataSynchronizer/src/main/java/com/ci6225/ntu/ead/service/HibernateSearchService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="137" width="242" x="82" y="325"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="com.ci6225.ntu.ead.service.ItemService" project="DataSynchronizer" 
+    file="/DataSynchronizer/src/main/java/com/ci6225/ntu/ead/service/ItemService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="83" width="137" x="376" y="380"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="6">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="7" name="cardservice"/>      
+      <multiplicity id="8" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="9">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="10" name="searchservice"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
